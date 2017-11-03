@@ -1,0 +1,97 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: #E57066;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+ 	@media(max-width:800px){
+  	justify-content: flex-start;
+  	align-items: flex-start;
+ 	}
+}
+
+.container{
+	padding:2em;
+	max-width:1000px;
+
+	@media(max-width:700px){
+		padding:1em;
+ 	}
+}
+
+.links{
+	margin:0;
+	padding:0;	
+
+	li{
+		margin:0 1.5em 2em 0;
+		padding:0;
+		list-style-type: none;
+		display: inline-block;
+	}
+	a{
+		color:black;
+		padding:0.3em 3px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size:1.3em;
+
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+
+    &:hover{
+    	border-bottom-color: black;
+    }
+	}
+
+	.linkedin {
+	
+		img{
+			position:relative;
+			top:2px;
+			height:23px;
+			width:23px;
+			margin-right:.5em;
+		}	
+	}
+	.email {
+
+		img{
+			position:relative;
+			top:2px;
+			height:21px;
+			width:28px;
+			margin-right:.5em;
+		}	
+	}
+	.soundcloud {
+
+		img{
+			position:relative;
+			top:1px;
+			height:22px;
+			width:39px;
+			margin-right:.5em;
+		}	
+	}
+}
+
+.fixed-wip{
+	position: fixed;
+	top:0;
+	left:5%;
+	right:5%;
+	bottom:0;
+	background-image:url('../wip-bg.png');
+	background-size:contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index:-1;
+
+}
+
+@import 'type';
